@@ -12,8 +12,6 @@ def isWinner(x, nums):
         list: A list of integers representing prime numbers up to `n`.
     """
     def prime_num_in_range_n(n):
-        if n < 2:
-            return []
         is_prime = [True] * (n + 1)
         is_prime[0] = is_prime[1] = False
         for i in range(2, int(n ** 0.5) + 1):
